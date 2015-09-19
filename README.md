@@ -4,8 +4,8 @@ API's
 Phase - 1
 - Esri - Location based Services
 - CircleCI - CICD (once the app is complete)
-- Magnet - Messaging Framework
-- Vinli - Automobile
+- Magnet - (Messaging Framework)
+- Vinli & Ford - Automobile
  
 Phase - 2
 - .CLUB for hosting the app. 
