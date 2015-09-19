@@ -11,3 +11,9 @@ Phase - 2
 - .CLUB for hosting the app. 
 - RICOH - Images
 - Yammer - (To show recent activity)
+
+Phase - 3
+- Twilio - for messages and calls on the home screen of the dashboard
+- Dolby - for playing music
+- Google voice - Voice API
+- Social Media Integration
