@@ -26,8 +26,6 @@
         UIAlertView* view = [[UIAlertView alloc] initWithTitle:@"Random Alert" message:[result description] delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
         [view show];
     }];
-//    
-//    UIAlertView* view = [UIAlertView alloc] initWithTitle:<#(NSString *)#> message:<#(NSString *)#> delegate:<#(id)#> cancelButtonTitle:<#(NSString *)#> otherButtonTitles:<#(NSString *), ...#>, nil
 }
 
 -(void) roundCorners {
