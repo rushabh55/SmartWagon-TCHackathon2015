@@ -17,19 +17,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="11058817_10207284342934909_7371258477699319096_n" translatesAutoresizingMaskIntoConstraints="NO" id="8Sd-6p-4vk">
-                                <rect key="frame" x="66" y="70" width="125" height="135"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile" translatesAutoresizingMaskIntoConstraints="NO" id="8Sd-6p-4vk">
+                                <rect key="frame" x="36" y="60" width="125" height="135"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="b1W-kO-WHS"/>
                                     <constraint firstAttribute="height" constant="135" id="u2A-Dy-iO4"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rushabh Gosar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fnj-4a-0Pj">
+                                <rect key="frame" x="176" y="80" width="176.5" height="36"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FSa-Zw-Hg9">
+                                <rect key="frame" x="30" y="0.0" width="600" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="Qez-ZR-biP"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem id="672-C5-SSX"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="8Sd-6p-4vk" firstAttribute="leading" secondItem="Dl2-xb-dYo" secondAttribute="leadingMargin" constant="50" id="1eN-SU-zO8"/>
-                            <constraint firstItem="8Sd-6p-4vk" firstAttribute="top" secondItem="PDt-Ih-h9K" secondAttribute="bottom" constant="50" id="ttE-gE-qJY"/>
+                            <constraint firstItem="8Sd-6p-4vk" firstAttribute="leading" secondItem="Dl2-xb-dYo" secondAttribute="leadingMargin" constant="20" id="1eN-SU-zO8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FSa-Zw-Hg9" secondAttribute="trailing" id="Gnw-Ff-bvA"/>
+                            <constraint firstAttribute="width" secondItem="FSa-Zw-Hg9" secondAttribute="width" id="NxF-Rk-JUo"/>
+                            <constraint firstItem="Fnj-4a-0Pj" firstAttribute="leading" secondItem="8Sd-6p-4vk" secondAttribute="trailing" constant="15" id="Rw5-Kv-G2i"/>
+                            <constraint firstItem="FSa-Zw-Hg9" firstAttribute="top" secondItem="Dl2-xb-dYo" secondAttribute="topMargin" id="TnC-lD-mcW"/>
+                            <constraint firstItem="Fnj-4a-0Pj" firstAttribute="top" secondItem="PDt-Ih-h9K" secondAttribute="bottom" constant="60" id="UEd-o2-Vw6"/>
+                            <constraint firstItem="8Sd-6p-4vk" firstAttribute="top" secondItem="PDt-Ih-h9K" secondAttribute="bottom" constant="40" id="ttE-gE-qJY"/>
+                            <constraint firstItem="FSa-Zw-Hg9" firstAttribute="leading" secondItem="Dl2-xb-dYo" secondAttribute="leadingMargin" id="vIO-UP-tW2"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Gnw-Ff-bvA"/>
+                                <exclude reference="vIO-UP-tW2"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="profilePic" destination="8Sd-6p-4vk" id="Pe0-hr-VqJ"/>
@@ -41,6 +68,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="11058817_10207284342934909_7371258477699319096_n" width="720" height="720"/>
+        <image name="Profile" width="720" height="720"/>
     </resources>
 </document>
