@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		28DC77271C16842C0CDC7F86 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F17BDD9A6CCC752E05A6A0 /* libPods.a */; };
+		964EBA911BAE1E41005F9641 /* StoryboardSapna.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 964EBA901BAE1E41005F9641 /* StoryboardSapna.storyboard */; };
+		964EBA971BAE1F79005F9641 /* cSapnaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 964EBA961BAE1F79005F9641 /* cSapnaViewController.m */; };
 		C2C8280A1BAE152600FABD41 /* UserInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C828091BAE152600FABD41 /* UserInfoVC.m */; };
 		C2C8280C1BAE152C00FABD41 /* UserInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2C8280B1BAE152C00FABD41 /* UserInfo.storyboard */; };
 		C2C8280F1BAE186300FABD41 /* NetworkingProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C8280E1BAE186300FABD41 /* NetworkingProtocol.m */; };
@@ -37,6 +39,9 @@
 		05F17BDD9A6CCC752E05A6A0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F88D6B5B3A5E88C452742D1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "../../Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5D88BA75C3E1ED52640C4019 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "../../Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		964EBA901BAE1E41005F9641 /* StoryboardSapna.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = StoryboardSapna.storyboard; path = ../../../Techcrunch/WeatherAPI/WeatherAPI/StoryboardSapna.storyboard; sourceTree = "<group>"; };
+		964EBA951BAE1F79005F9641 /* cSapnaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cSapnaViewController.h; path = ../../../cSapnaViewController.h; sourceTree = "<group>"; };
+		964EBA961BAE1F79005F9641 /* cSapnaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = cSapnaViewController.m; path = ../../../cSapnaViewController.m; sourceTree = "<group>"; };
 		C2C828081BAE152600FABD41 /* UserInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserInfoVC.h; path = ../../../Techcrunch/WeatherAPI/WeatherAPI/UserInfoVC.h; sourceTree = "<group>"; };
 		C2C828091BAE152600FABD41 /* UserInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserInfoVC.m; path = ../../../Techcrunch/WeatherAPI/WeatherAPI/UserInfoVC.m; sourceTree = "<group>"; };
 		C2C8280B1BAE152C00FABD41 /* UserInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = UserInfo.storyboard; path = ../../../Techcrunch/WeatherAPI/WeatherAPI/UserInfo.storyboard; sourceTree = "<group>"; };
@@ -91,11 +96,14 @@
 		C2C828071BAE14B300FABD41 /* UserInfo */ = {
 			isa = PBXGroup;
 			children = (
+				964EBA951BAE1F79005F9641 /* cSapnaViewController.h */,
+				964EBA961BAE1F79005F9641 /* cSapnaViewController.m */,
 				C2C8280B1BAE152C00FABD41 /* UserInfo.storyboard */,
 				C2C828081BAE152600FABD41 /* UserInfoVC.h */,
 				C2C828091BAE152600FABD41 /* UserInfoVC.m */,
 				C2C8280D1BAE186300FABD41 /* NetworkingProtocol.h */,
 				C2C8280E1BAE186300FABD41 /* NetworkingProtocol.m */,
+				964EBA901BAE1E41005F9641 /* StoryboardSapna.storyboard */,
 			);
 			name = UserInfo;
 			sourceTree = "<group>";
@@ -263,6 +271,7 @@
 				C2D3270C1BADFD8A00BFF7D6 /* WeatherInfo.storyboard in Resources */,
 				C2D326F61BADF92C00BFF7D6 /* LaunchScreen.xib in Resources */,
 				C2D326F31BADF92C00BFF7D6 /* Images.xcassets in Resources */,
+				964EBA911BAE1E41005F9641 /* StoryboardSapna.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +328,7 @@
 				C2D326EE1BADF92C00BFF7D6 /* ViewController.m in Sources */,
 				C2D3270F1BAE011E00BFF7D6 /* WeatherScreenVC.m in Sources */,
 				C2D326E51BADF92C00BFF7D6 /* main.m in Sources */,
+				964EBA971BAE1F79005F9641 /* cSapnaViewController.m in Sources */,
 				C2C8280A1BAE152600FABD41 /* UserInfoVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
