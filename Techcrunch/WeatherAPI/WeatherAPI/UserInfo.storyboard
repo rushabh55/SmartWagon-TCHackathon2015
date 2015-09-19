@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xbe-N1-JtN">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--UserInfoVC-->
+        <scene sceneID="tF8-FQ-q7s">
+            <objects>
+                <viewController title="UserInfoVC" id="xbe-N1-JtN" customClass="UserInfoVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PDt-Ih-h9K"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hhh-En-NUm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dl2-xb-dYo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="11058817_10207284342934909_7371258477699319096_n" translatesAutoresizingMaskIntoConstraints="NO" id="8Sd-6p-4vk">
+                                <rect key="frame" x="66" y="70" width="125" height="135"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="b1W-kO-WHS"/>
+                                    <constraint firstAttribute="height" constant="135" id="u2A-Dy-iO4"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8Sd-6p-4vk" firstAttribute="leading" secondItem="Dl2-xb-dYo" secondAttribute="leadingMargin" constant="50" id="1eN-SU-zO8"/>
+                            <constraint firstItem="8Sd-6p-4vk" firstAttribute="top" secondItem="PDt-Ih-h9K" secondAttribute="bottom" constant="50" id="ttE-gE-qJY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="profilePic" destination="8Sd-6p-4vk" id="Pe0-hr-VqJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rG0-QY-tr2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="423" y="474"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="11058817_10207284342934909_7371258477699319096_n" width="720" height="720"/>
+    </resources>
+</document>

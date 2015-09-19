@@ -17,6 +17,8 @@
 		C2D327021BADF92C00BFF7D6 /* WeatherAPITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D327011BADF92C00BFF7D6 /* WeatherAPITests.m */; };
 		C2D3270C1BADFD8A00BFF7D6 /* WeatherInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2D3270B1BADFD8A00BFF7D6 /* WeatherInfo.storyboard */; };
 		C2D3270F1BAE011E00BFF7D6 /* WeatherScreenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D3270E1BAE011E00BFF7D6 /* WeatherScreenVC.m */; };
+		C2D3274A1BAE10DB00BFF7D6 /* UserInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2D327491BAE10DB00BFF7D6 /* UserInfo.storyboard */; };
+		C2D3274D1BAE118500BFF7D6 /* UserInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D3274C1BAE118500BFF7D6 /* UserInfoVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,9 @@
 		C2D3270B1BADFD8A00BFF7D6 /* WeatherInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WeatherInfo.storyboard; sourceTree = "<group>"; };
 		C2D3270D1BAE011E00BFF7D6 /* WeatherScreenVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherScreenVC.h; sourceTree = "<group>"; };
 		C2D3270E1BAE011E00BFF7D6 /* WeatherScreenVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherScreenVC.m; sourceTree = "<group>"; };
+		C2D327491BAE10DB00BFF7D6 /* UserInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserInfo.storyboard; sourceTree = "<group>"; };
+		C2D3274B1BAE118500BFF7D6 /* UserInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoVC.h; sourceTree = "<group>"; };
+		C2D3274C1BAE118500BFF7D6 /* UserInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +93,7 @@
 		C2D326E11BADF92C00BFF7D6 /* WeatherAPI */ = {
 			isa = PBXGroup;
 			children = (
+				C2D327481BAE10CA00BFF7D6 /* Main Flow */,
 				C2D326E61BADF92C00BFF7D6 /* AppDelegate.h */,
 				C2D326E71BADF92C00BFF7D6 /* AppDelegate.m */,
 				C2D326EC1BADF92C00BFF7D6 /* ViewController.h */,
@@ -128,6 +134,16 @@
 				C2D327001BADF92C00BFF7D6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C2D327481BAE10CA00BFF7D6 /* Main Flow */ = {
+			isa = PBXGroup;
+			children = (
+				C2D327491BAE10DB00BFF7D6 /* UserInfo.storyboard */,
+				C2D3274B1BAE118500BFF7D6 /* UserInfoVC.h */,
+				C2D3274C1BAE118500BFF7D6 /* UserInfoVC.m */,
+			);
+			name = "Main Flow";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2D326F11BADF92C00BFF7D6 /* Main.storyboard in Resources */,
+				C2D3274A1BAE10DB00BFF7D6 /* UserInfo.storyboard in Resources */,
 				C2D3270C1BADFD8A00BFF7D6 /* WeatherInfo.storyboard in Resources */,
 				C2D326F61BADF92C00BFF7D6 /* LaunchScreen.xib in Resources */,
 				C2D326F31BADF92C00BFF7D6 /* Images.xcassets in Resources */,
@@ -237,6 +254,7 @@
 				C2D326EE1BADF92C00BFF7D6 /* ViewController.m in Sources */,
 				C2D3270F1BAE011E00BFF7D6 /* WeatherScreenVC.m in Sources */,
 				C2D326E51BADF92C00BFF7D6 /* main.m in Sources */,
+				C2D3274D1BAE118500BFF7D6 /* UserInfoVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

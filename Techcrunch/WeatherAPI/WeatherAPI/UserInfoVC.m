@@ -1,27 +1,28 @@
 //
-//  WeatherScreenVC.m
+//  UserInfoVC.m
 //  WeatherAPI
 //
 //  Created by Gosar, Rushabh on 9/19/15.
 //  Copyright (c) 2015 Gosar, Rushabh. All rights reserved.
 //
 
-#import "WeatherScreenVC.h"
+#import "UserInfoVC.h"
 
-@interface WeatherScreenVC ()
+@interface UserInfoVC ()
 
 @end
 
-@implementation WeatherScreenVC
+@implementation UserInfoVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self roundCorners];
 }
 
--(void) loadDataFromAPI {
-
+-(void) roundCorners {
+    _profilePic.layer.cornerRadius = _profilePic.bounds.size.width / 2;
+    _profilePic.clipsToBounds = YES;
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
