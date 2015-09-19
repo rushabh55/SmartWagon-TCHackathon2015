@@ -7,6 +7,7 @@
 //
 
 #import "UserInfoVC.h"
+#import "NetworkingProtocol.h"
 
 @interface UserInfoVC ()
 
@@ -17,6 +18,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self roundCorners];
+    [self getWeatherData];
+}
+
+-(void) getWeatherData {
+    [[NetworkingProtocol instance] sendGETRequest:@"http://api.wunderground.com/api/ff912ba5a9a530cd/conditions/q/CA/San_Francisco.json" delegate:^(id result, NSError * error) {
+        UIAlertView* view = [[UIAlertView alloc] initWithTitle:@"Random Alert" message:[result description] delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        [view show];
+    }];
+//    
+//    UIAlertView* view = [UIAlertView alloc] initWithTitle:<#(NSString *)#> message:<#(NSString *)#> delegate:<#(id)#> cancelButtonTitle:<#(NSString *)#> otherButtonTitles:<#(NSString *), ...#>, nil
 }
 
 -(void) roundCorners {

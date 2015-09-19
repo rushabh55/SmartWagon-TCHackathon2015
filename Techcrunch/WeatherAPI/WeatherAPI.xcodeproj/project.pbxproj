@@ -10,6 +10,7 @@
 		28DC77271C16842C0CDC7F86 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F17BDD9A6CCC752E05A6A0 /* libPods.a */; };
 		C2C8280A1BAE152600FABD41 /* UserInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C828091BAE152600FABD41 /* UserInfoVC.m */; };
 		C2C8280C1BAE152C00FABD41 /* UserInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2C8280B1BAE152C00FABD41 /* UserInfo.storyboard */; };
+		C2C8280F1BAE186300FABD41 /* NetworkingProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C8280E1BAE186300FABD41 /* NetworkingProtocol.m */; };
 		C2D326E51BADF92C00BFF7D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D326E41BADF92C00BFF7D6 /* main.m */; };
 		C2D326E81BADF92C00BFF7D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D326E71BADF92C00BFF7D6 /* AppDelegate.m */; };
 		C2D326EB1BADF92C00BFF7D6 /* WeatherAPI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C2D326E91BADF92C00BFF7D6 /* WeatherAPI.xcdatamodeld */; };
@@ -39,6 +40,8 @@
 		C2C828081BAE152600FABD41 /* UserInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserInfoVC.h; path = ../../../Techcrunch/WeatherAPI/WeatherAPI/UserInfoVC.h; sourceTree = "<group>"; };
 		C2C828091BAE152600FABD41 /* UserInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserInfoVC.m; path = ../../../Techcrunch/WeatherAPI/WeatherAPI/UserInfoVC.m; sourceTree = "<group>"; };
 		C2C8280B1BAE152C00FABD41 /* UserInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = UserInfo.storyboard; path = ../../../Techcrunch/WeatherAPI/WeatherAPI/UserInfo.storyboard; sourceTree = "<group>"; };
+		C2C8280D1BAE186300FABD41 /* NetworkingProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkingProtocol.h; path = ../../../Techcrunch/WeatherAPI/WeatherAPI/NetworkingProtocol.h; sourceTree = "<group>"; };
+		C2C8280E1BAE186300FABD41 /* NetworkingProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkingProtocol.m; path = ../../../Techcrunch/WeatherAPI/WeatherAPI/NetworkingProtocol.m; sourceTree = "<group>"; };
 		C2D326DF1BADF92C00BFF7D6 /* WeatherAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2D326E31BADF92C00BFF7D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2D326E41BADF92C00BFF7D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -91,6 +94,8 @@
 				C2C8280B1BAE152C00FABD41 /* UserInfo.storyboard */,
 				C2C828081BAE152600FABD41 /* UserInfoVC.h */,
 				C2C828091BAE152600FABD41 /* UserInfoVC.m */,
+				C2C8280D1BAE186300FABD41 /* NetworkingProtocol.h */,
+				C2C8280E1BAE186300FABD41 /* NetworkingProtocol.m */,
 			);
 			name = UserInfo;
 			sourceTree = "<group>";
@@ -310,6 +315,7 @@
 			files = (
 				C2D326E81BADF92C00BFF7D6 /* AppDelegate.m in Sources */,
 				C2D326EB1BADF92C00BFF7D6 /* WeatherAPI.xcdatamodeld in Sources */,
+				C2C8280F1BAE186300FABD41 /* NetworkingProtocol.m in Sources */,
 				C2D326EE1BADF92C00BFF7D6 /* ViewController.m in Sources */,
 				C2D3270F1BAE011E00BFF7D6 /* WeatherScreenVC.m in Sources */,
 				C2D326E51BADF92C00BFF7D6 /* main.m in Sources */,
