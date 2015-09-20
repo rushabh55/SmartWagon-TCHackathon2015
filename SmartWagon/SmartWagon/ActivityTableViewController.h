@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ActivityTableViewController : UITableViewController
-
+@property (atomic, strong) NSArray* dataSource;
 @end

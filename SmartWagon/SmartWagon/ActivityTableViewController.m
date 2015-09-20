@@ -14,9 +14,16 @@
 
 @implementation ActivityTableViewController
 
+-(NSArray*)dictInit {
+    NSMutableArray * dict = [[NSMutableArray alloc] init];
+    [dict addObject:@"Work -> Home\n4:30pm    5:11pm"];
+    [dict addObject:@"Gas"];
+    return dict;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.dataSource = [self dictInit];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -32,15 +39,12 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    return self.dataSource.count;
 }
 
 /*
