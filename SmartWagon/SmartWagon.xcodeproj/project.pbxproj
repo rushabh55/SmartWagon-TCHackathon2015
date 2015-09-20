@@ -19,6 +19,7 @@
 		67AE11511BAE7F7200B6F7B1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AE11501BAE7F7200B6F7B1 /* Security.framework */; };
 		67AE11531BAE7F7C00B6F7B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AE11521BAE7F7C00B6F7B1 /* UIKit.framework */; };
 		67AE11581BAE82E500B6F7B1 /* EsriNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AE11571BAE82E500B6F7B1 /* EsriNavigator.m */; };
+		67AE115B1BAEAC8500B6F7B1 /* GasStations.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AE115A1BAEAC8500B6F7B1 /* GasStations.m */; settings = {ASSET_TAGS = (); }; };
 		C2089E991BAE75310014B41F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2089E981BAE75310014B41F /* main.m */; };
 		C2089E9C1BAE75310014B41F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2089E9B1BAE75310014B41F /* AppDelegate.m */; };
 		C2089E9F1BAE75310014B41F /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2089E9E1BAE75310014B41F /* FirstViewController.m */; };
@@ -61,6 +62,8 @@
 		67AE11521BAE7F7C00B6F7B1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		67AE11561BAE82C200B6F7B1 /* EsriNavigator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EsriNavigator.h; sourceTree = "<group>"; };
 		67AE11571BAE82E500B6F7B1 /* EsriNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EsriNavigator.m; sourceTree = "<group>"; };
+		67AE11591BAEAC7000B6F7B1 /* GasStations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GasStations.h; sourceTree = "<group>"; };
+		67AE115A1BAEAC8500B6F7B1 /* GasStations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GasStations.m; sourceTree = "<group>"; };
 		C2089E931BAE75310014B41F /* SmartWagon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartWagon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2089E971BAE75310014B41F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2089E981BAE75310014B41F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -158,6 +161,8 @@
 		67AE113D1BAE7AFA00B6F7B1 /* Alerts */ = {
 			isa = PBXGroup;
 			children = (
+				67AE11591BAEAC7000B6F7B1 /* GasStations.h */,
+				67AE115A1BAEAC8500B6F7B1 /* GasStations.m */,
 			);
 			name = Alerts;
 			sourceTree = "<group>";
@@ -351,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67AE115B1BAEAC8500B6F7B1 /* GasStations.m in Sources */,
 				C2A9D1521BAECD7300F92969 /* WeatherInfo.m in Sources */,
 				C2089EA21BAE75310014B41F /* SecondViewController.m in Sources */,
 				C2089E9C1BAE75310014B41F /* AppDelegate.m in Sources */,
