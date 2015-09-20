@@ -29,6 +29,7 @@
 		C2089EB61BAE75310014B41F /* SmartWagonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2089EB51BAE75310014B41F /* SmartWagonTests.m */; };
 		C28E472E1BAE899700F510D6 /* ArcGIS.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = C28E472D1BAE899700F510D6 /* ArcGIS.bundle */; };
 		C28E47321BAE8AC900F510D6 /* MockVinliDataControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C28E47311BAE8AC900F510D6 /* MockVinliDataControl.m */; };
+		C28E47351BAE8C2400F510D6 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C28E47341BAE8C2400F510D6 /* MapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		C28E472D1BAE899700F510D6 /* ArcGIS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ArcGIS.bundle; path = ../../../../Library/SDKs/ArcGIS/iOS/ArcGIS.framework/Versions/Current/Resources/ArcGIS.bundle; sourceTree = "<group>"; };
 		C28E47301BAE8AC900F510D6 /* MockVinliDataControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockVinliDataControl.h; sourceTree = "<group>"; };
 		C28E47311BAE8AC900F510D6 /* MockVinliDataControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockVinliDataControl.m; sourceTree = "<group>"; };
+		C28E47331BAE8C2400F510D6 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		C28E47341BAE8C2400F510D6 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 			children = (
 				67AE11561BAE82C200B6F7B1 /* EsriNavigator.h */,
 				67AE11571BAE82E500B6F7B1 /* EsriNavigator.m */,
+				C28E47331BAE8C2400F510D6 /* MapViewController.h */,
+				C28E47341BAE8C2400F510D6 /* MapViewController.m */,
 			);
 			name = Navigation;
 			sourceTree = "<group>";
@@ -320,6 +325,7 @@
 				C2089E9F1BAE75310014B41F /* FirstViewController.m in Sources */,
 				67AE11581BAE82E500B6F7B1 /* EsriNavigator.m in Sources */,
 				C2089E991BAE75310014B41F /* main.m in Sources */,
+				C28E47351BAE8C2400F510D6 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
