@@ -17,15 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSDictionary* dict = [self loadData];
-    NSDictionary* currObs = dict[@"current_observation"];
-    NSString* sample = currObs[@"dewpoint_string"];
-    //here sample will give 56 F (13...
+    NSDictionary* currObs = dict[@"geoLocation"];
+    NSString* lat = currObs[@"lat"];
+    NSString* lng = currObs[@"lng"];
 }
 
 -(NSDictionary*)loadData {
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
     [request setHTTPMethod:@"GET"];
-    [request setURL:[NSURL URLWithString:@"http://api.wunderground.com/api/ff912ba5a9a530cd/conditions/q/CA/San_Francisco.json"]];
+    [request setURL:[NSURL URLWithString:@"http://devapi.mygasfeed.com/stations/radius/37.759851/-122.383611/5/reg/distance/rfej9napna.json?callback="]];
     
     NSError *error = [[NSError alloc] init];
     NSHTTPURLResponse *responseCode = nil;

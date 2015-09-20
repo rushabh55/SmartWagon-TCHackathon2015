@@ -54,6 +54,17 @@
 //    }
 }
 
+- (void)setlocation(float lat, float lng) {
+    //Set the parameters
+    let params = AGSLocatorFindParameters()
+    id params = [[AGSLocatorFindParameters alloc] init]
+    params.text = searchBar.text
+    params.outFields = ["*"]
+    params.outSpatialReference = self.mapView.spatialReference
+    params.location = AGSPoint(x: lat, y: lng, spatialReference: nil)
+    self.locator.findWithParameters(params)
+};
+
 
 -(BOOL)mapView:(AGSMapView *)mapView shouldHitTestLayer:(AGSLayer *)layer atPoint:(CGPoint)screen mapPoint:(AGSPoint *)mappoint {
     
