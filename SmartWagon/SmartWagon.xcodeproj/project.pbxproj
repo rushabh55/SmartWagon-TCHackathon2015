@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67AE113F1BAE7F0D00B6F7B1 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AE113E1BAE7F0D00B6F7B1 /* AssetsLibrary.framework */; };
+		67AE11411BAE7F1900B6F7B1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AE11401BAE7F1900B6F7B1 /* CoreGraphics.framework */; };
+		67AE11431BAE7F2600B6F7B1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AE11421BAE7F2600B6F7B1 /* CoreLocation.framework */; };
+		67AE11451BAE7F3200B6F7B1 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AE11441BAE7F3200B6F7B1 /* CoreText.framework */; };
+		67AE11471BAE7F3F00B6F7B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AE11461BAE7F3F00B6F7B1 /* Foundation.framework */; };
+		67AE11491BAE7F4900B6F7B1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AE11481BAE7F4900B6F7B1 /* QuartzCore.framework */; };
+		67AE114B1BAE7F5300B6F7B1 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AE114A1BAE7F5300B6F7B1 /* MediaPlayer.framework */; };
+		67AE114D1BAE7F5D00B6F7B1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AE114C1BAE7F5D00B6F7B1 /* MobileCoreServices.framework */; };
+		67AE114F1BAE7F6700B6F7B1 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AE114E1BAE7F6700B6F7B1 /* OpenGLES.framework */; };
+		67AE11511BAE7F7200B6F7B1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AE11501BAE7F7200B6F7B1 /* Security.framework */; };
+		67AE11531BAE7F7C00B6F7B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AE11521BAE7F7C00B6F7B1 /* UIKit.framework */; };
+		67AE11551BAE827400B6F7B1 /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 67AE11541BAE827400B6F7B1 /* Resources */; settings = {ASSET_TAGS = (); }; };
+		67AE11581BAE82E500B6F7B1 /* EsriNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AE11571BAE82E500B6F7B1 /* EsriNavigator.m */; settings = {ASSET_TAGS = (); }; };
 		C2089E991BAE75310014B41F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2089E981BAE75310014B41F /* main.m */; };
 		C2089E9C1BAE75310014B41F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2089E9B1BAE75310014B41F /* AppDelegate.m */; };
 		C2089E9F1BAE75310014B41F /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2089E9E1BAE75310014B41F /* FirstViewController.m */; };
@@ -28,6 +41,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		67AE113E1BAE7F0D00B6F7B1 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		67AE11401BAE7F1900B6F7B1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		67AE11421BAE7F2600B6F7B1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		67AE11441BAE7F3200B6F7B1 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		67AE11461BAE7F3F00B6F7B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		67AE11481BAE7F4900B6F7B1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		67AE114A1BAE7F5300B6F7B1 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		67AE114C1BAE7F5D00B6F7B1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		67AE114E1BAE7F6700B6F7B1 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		67AE11501BAE7F7200B6F7B1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		67AE11521BAE7F7C00B6F7B1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		67AE11541BAE827400B6F7B1 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Resources; path = ../../Desktop/Resources; sourceTree = "<group>"; };
+		67AE11561BAE82C200B6F7B1 /* EsriNavigator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EsriNavigator.h; sourceTree = "<group>"; };
+		67AE11571BAE82E500B6F7B1 /* EsriNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EsriNavigator.m; sourceTree = "<group>"; };
 		C2089E931BAE75310014B41F /* SmartWagon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartWagon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2089E971BAE75310014B41F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2089E981BAE75310014B41F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -50,6 +77,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67AE11531BAE7F7C00B6F7B1 /* UIKit.framework in Frameworks */,
+				67AE11511BAE7F7200B6F7B1 /* Security.framework in Frameworks */,
+				67AE114F1BAE7F6700B6F7B1 /* OpenGLES.framework in Frameworks */,
+				67AE114D1BAE7F5D00B6F7B1 /* MobileCoreServices.framework in Frameworks */,
+				67AE114B1BAE7F5300B6F7B1 /* MediaPlayer.framework in Frameworks */,
+				67AE11491BAE7F4900B6F7B1 /* QuartzCore.framework in Frameworks */,
+				67AE11471BAE7F3F00B6F7B1 /* Foundation.framework in Frameworks */,
+				67AE11451BAE7F3200B6F7B1 /* CoreText.framework in Frameworks */,
+				67AE11431BAE7F2600B6F7B1 /* CoreLocation.framework in Frameworks */,
+				67AE11411BAE7F1900B6F7B1 /* CoreGraphics.framework in Frameworks */,
+				67AE113F1BAE7F0D00B6F7B1 /* AssetsLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +104,8 @@
 		67AE113A1BAE7AB700B6F7B1 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				67AE11561BAE82C200B6F7B1 /* EsriNavigator.h */,
+				67AE11571BAE82E500B6F7B1 /* EsriNavigator.m */,
 			);
 			name = Navigation;
 			sourceTree = "<group>";
@@ -94,6 +134,18 @@
 		C2089E8A1BAE75310014B41F = {
 			isa = PBXGroup;
 			children = (
+				67AE11541BAE827400B6F7B1 /* Resources */,
+				67AE11521BAE7F7C00B6F7B1 /* UIKit.framework */,
+				67AE11501BAE7F7200B6F7B1 /* Security.framework */,
+				67AE114E1BAE7F6700B6F7B1 /* OpenGLES.framework */,
+				67AE114C1BAE7F5D00B6F7B1 /* MobileCoreServices.framework */,
+				67AE114A1BAE7F5300B6F7B1 /* MediaPlayer.framework */,
+				67AE11481BAE7F4900B6F7B1 /* QuartzCore.framework */,
+				67AE11461BAE7F3F00B6F7B1 /* Foundation.framework */,
+				67AE11441BAE7F3200B6F7B1 /* CoreText.framework */,
+				67AE11421BAE7F2600B6F7B1 /* CoreLocation.framework */,
+				67AE11401BAE7F1900B6F7B1 /* CoreGraphics.framework */,
+				67AE113E1BAE7F0D00B6F7B1 /* AssetsLibrary.framework */,
 				C2089E951BAE75310014B41F /* SmartWagon */,
 				C2089EB21BAE75310014B41F /* SmartWagonTests */,
 				C2089E941BAE75310014B41F /* Products */,
@@ -236,6 +288,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67AE11551BAE827400B6F7B1 /* Resources in Resources */,
 				C2089EA51BAE75310014B41F /* Main.storyboard in Resources */,
 				C2089EAA1BAE75310014B41F /* LaunchScreen.xib in Resources */,
 				C2089EA71BAE75310014B41F /* Images.xcassets in Resources */,
@@ -259,6 +312,7 @@
 				C2089EA21BAE75310014B41F /* SecondViewController.m in Sources */,
 				C2089E9C1BAE75310014B41F /* AppDelegate.m in Sources */,
 				C2089E9F1BAE75310014B41F /* FirstViewController.m in Sources */,
+				67AE11581BAE82E500B6F7B1 /* EsriNavigator.m in Sources */,
 				C2089E991BAE75310014B41F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,9 +441,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = /Users/hitesh/Library/SDKs/ArcGIS/iOS;
 				INFOPLIST_FILE = SmartWagon/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					ArcGIS,
+					"-l",
+					"c++",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -398,9 +460,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = /Users/hitesh/Library/SDKs/ArcGIS/iOS;
 				INFOPLIST_FILE = SmartWagon/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					ArcGIS,
+					"-l",
+					"c++",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
