@@ -57,6 +57,28 @@ install_resource()
       ;;
   esac
 }
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "VinliBluetooth/VinliBluetooth/pids.json"
+  install_resource "VinliBluetooth/VinliBluetooth/UI/images.xcassets/default_icon.imageset/Contents.json"
+  install_resource "VinliBluetooth/VinliBluetooth/UI/images.xcassets/icn_bluetooth.imageset/Contents.json"
+  install_resource "VinliBluetooth/VinliBluetooth/UI/images.xcassets/icn_checkmark.imageset/Contents.json"
+  install_resource "VinliBluetooth/VinliBluetooth/UI/images.xcassets/vinli_icon.imageset/Contents.json"
+  install_resource "VinliBluetooth/VinliBluetooth/UI/Vinli.storyboard"
+  install_resource "VinliBluetooth/VinliBluetooth/UI/WhitneyHTF-Light.otf"
+  install_resource "VinliBluetooth/VinliBluetooth/UI/WhitneyHTF-Medium.otf"
+  install_resource "VinliBluetooth/VinliBluetooth/UI/images.xcassets"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "VinliBluetooth/VinliBluetooth/pids.json"
+  install_resource "VinliBluetooth/VinliBluetooth/UI/images.xcassets/default_icon.imageset/Contents.json"
+  install_resource "VinliBluetooth/VinliBluetooth/UI/images.xcassets/icn_bluetooth.imageset/Contents.json"
+  install_resource "VinliBluetooth/VinliBluetooth/UI/images.xcassets/icn_checkmark.imageset/Contents.json"
+  install_resource "VinliBluetooth/VinliBluetooth/UI/images.xcassets/vinli_icon.imageset/Contents.json"
+  install_resource "VinliBluetooth/VinliBluetooth/UI/Vinli.storyboard"
+  install_resource "VinliBluetooth/VinliBluetooth/UI/WhitneyHTF-Light.otf"
+  install_resource "VinliBluetooth/VinliBluetooth/UI/WhitneyHTF-Medium.otf"
+  install_resource "VinliBluetooth/VinliBluetooth/UI/images.xcassets"
+fi
 
 mkdir -p "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
 rsync -avr --copy-links --no-relative --exclude '*/.svn/*' --files-from="$RESOURCES_TO_COPY" / "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

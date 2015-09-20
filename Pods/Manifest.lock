@@ -20,11 +20,18 @@ PODS:
   - AFNetworking/UIKit (2.6.0):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - VinliBluetooth (1.0):
+    - VinliNet
+  - VinliNet (1.0.6)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5)
+  - VinliBluetooth
+  - VinliNet
 
 SPEC CHECKSUMS:
   AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
+  VinliBluetooth: d83e956c95bfa58c561572d7ba7db20ff8dc4fa9
+  VinliNet: 04468bdda4ed4896f0083f4c2f34c5b3ebb6f355
 
 COCOAPODS: 0.38.2
