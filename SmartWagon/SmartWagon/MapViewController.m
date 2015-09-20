@@ -21,6 +21,7 @@
     [_mapView addMapLayer:tiledLayer withName:@"Basemap Tiled Layer"];
     
     self.mapView.layerDelegate = self;
+    //to focus on the location
     [self.mapView.locationDisplay startDataSource];
     self.mapView.locationDisplay.autoPanMode = AGSLocationDisplayAutoPanModeCompassNavigation ;
     self.mapView.locationDisplay.navigationPointHeightFactor  = 0.5; //50% along the center line from the bottom edge to the top edge
