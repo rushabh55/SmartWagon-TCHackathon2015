@@ -16,7 +16,7 @@
 
 -(void) viewDidLoad {
     [super viewDidLoad];
-    NSURL* url = [NSURL URLWithString:@"http://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer"];
+    NSURL* url = [NSURL URLWithString:@"http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer"];
     AGSTiledMapServiceLayer *tiledLayer = [AGSTiledMapServiceLayer tiledMapServiceLayerWithURL:url];
     [_mapView addMapLayer:tiledLayer withName:@"Basemap Tiled Layer"];
     
