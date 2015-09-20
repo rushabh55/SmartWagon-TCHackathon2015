@@ -159,19 +159,56 @@
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="kOK-iZ-fVJ">
             <objects>
-                <viewController id="0uw-Ow-B50" sceneMemberID="viewController">
+                <viewController id="0uw-Ow-B50" customClass="MapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2nh-Mb-CXT"/>
                         <viewControllerLayoutGuide type="bottom" id="YwJ-bk-DBS"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="dyU-Fk-mhf">
+                    <view key="view" contentMode="scaleToFill" id="gFk-p3-VXn">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dhE-b9-3LN" customClass="AGSMapView">
+                                <rect key="frame" x="0.0" y="68" width="600" height="488"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bec-qs-Hid">
+                                <rect key="frame" x="35" y="16" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="mkv-YO-LXa">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="4kw-rx-T0h"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bec-qs-Hid" firstAttribute="width" secondItem="gFk-p3-VXn" secondAttribute="width" id="6up-cU-IhS"/>
+                            <constraint firstItem="dhE-b9-3LN" firstAttribute="top" secondItem="gFk-p3-VXn" secondAttribute="topMargin" constant="68" id="9or-q9-f6w"/>
+                            <constraint firstAttribute="height" secondItem="dhE-b9-3LN" secondAttribute="height" id="Agh-8w-FBL"/>
+                            <constraint firstItem="YwJ-bk-DBS" firstAttribute="top" secondItem="dhE-b9-3LN" secondAttribute="bottom" id="Iyb-a3-SMt"/>
+                            <constraint firstAttribute="centerY" secondItem="dhE-b9-3LN" secondAttribute="centerY" id="Zzf-LY-vhf"/>
+                            <constraint firstItem="bec-qs-Hid" firstAttribute="top" secondItem="gFk-p3-VXn" secondAttribute="topMargin" constant="16" id="dNl-0s-mLF"/>
+                            <constraint firstAttribute="centerX" secondItem="dhE-b9-3LN" secondAttribute="centerX" id="rNJ-YX-Xlz"/>
+                            <constraint firstAttribute="width" secondItem="dhE-b9-3LN" secondAttribute="width" id="zTf-cT-n1k"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Agh-8w-FBL"/>
+                                <exclude reference="Zzf-LY-vhf"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="c9Z-Ug-Yfy"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mapView" destination="dhE-b9-3LN" id="c9h-Ox-r85"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="umU-Kb-ZhZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
