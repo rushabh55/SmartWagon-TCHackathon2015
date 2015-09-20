@@ -6,8 +6,9 @@
 //  Copyright © 2015 Gosar, Rushabh. All rights reserved.
 //
 
-#ifndef GasStations_h
-#define GasStations_h
+#import <UIKit/UIKit.h>
+
+@interface GasStations : UIViewController
 
 
-#endif /* GasStations_h */
+@end
