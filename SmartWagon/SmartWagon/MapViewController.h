@@ -11,5 +11,6 @@
 
 @interface MapViewController : UIViewController<AGSMapViewLayerDelegate, CLLocationManagerDelegate, UIAlertViewDelegate>
 @property (weak, nonatomic) IBOutlet AGSMapView *mapView;
+- (IBAction)backPressed:(id)sender;
 
 @end
