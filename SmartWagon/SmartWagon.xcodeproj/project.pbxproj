@@ -19,7 +19,7 @@
 		67AE11511BAE7F7200B6F7B1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AE11501BAE7F7200B6F7B1 /* Security.framework */; };
 		67AE11531BAE7F7C00B6F7B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AE11521BAE7F7C00B6F7B1 /* UIKit.framework */; };
 		67AE11581BAE82E500B6F7B1 /* EsriNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AE11571BAE82E500B6F7B1 /* EsriNavigator.m */; };
-		67AE115B1BAEAC8500B6F7B1 /* GasStations.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AE115A1BAEAC8500B6F7B1 /* GasStations.m */; settings = {ASSET_TAGS = (); }; };
+		67AE115B1BAEAC8500B6F7B1 /* GasStations.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AE115A1BAEAC8500B6F7B1 /* GasStations.m */; };
 		C2089E991BAE75310014B41F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2089E981BAE75310014B41F /* main.m */; };
 		C2089E9C1BAE75310014B41F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2089E9B1BAE75310014B41F /* AppDelegate.m */; };
 		C2089E9F1BAE75310014B41F /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2089E9E1BAE75310014B41F /* FirstViewController.m */; };
@@ -36,6 +36,7 @@
 		C2A9D14E1BAEB89C00F92969 /* ActivityTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A9D14D1BAEB89C00F92969 /* ActivityTableViewController.m */; };
 		C2A9D1521BAECD7300F92969 /* WeatherInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A9D1511BAECD7300F92969 /* WeatherInfo.m */; };
 		C2A9D1541BAED01400F92969 /* WEATHERDATA.json in Resources */ = {isa = PBXBuildFile; fileRef = C2A9D1531BAED01400F92969 /* WEATHERDATA.json */; };
+		C2A9D1571BAF0AD400F92969 /* OutlookMockDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A9D1561BAF0AD400F92969 /* OutlookMockDataController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,8 @@
 		C2A9D1501BAECD7300F92969 /* WeatherInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherInfo.h; sourceTree = "<group>"; };
 		C2A9D1511BAECD7300F92969 /* WeatherInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherInfo.m; sourceTree = "<group>"; };
 		C2A9D1531BAED01400F92969 /* WEATHERDATA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WEATHERDATA.json; sourceTree = "<group>"; };
+		C2A9D1551BAF0AD400F92969 /* OutlookMockDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutlookMockDataController.h; sourceTree = "<group>"; };
+		C2A9D1561BAF0AD400F92969 /* OutlookMockDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutlookMockDataController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +219,8 @@
 				C2089EA61BAE75310014B41F /* Images.xcassets */,
 				C2089EA81BAE75310014B41F /* LaunchScreen.xib */,
 				C2089E961BAE75310014B41F /* Supporting Files */,
+				C2A9D1551BAF0AD400F92969 /* OutlookMockDataController.h */,
+				C2A9D1561BAF0AD400F92969 /* OutlookMockDataController.m */,
 			);
 			path = SmartWagon;
 			sourceTree = "<group>";
@@ -368,6 +373,7 @@
 				C2089E991BAE75310014B41F /* main.m in Sources */,
 				C2A9D1421BAEA4BA00F92969 /* CarInfo.m in Sources */,
 				C28E47351BAE8C2400F510D6 /* MapViewController.m in Sources */,
+				C2A9D1571BAF0AD400F92969 /* OutlookMockDataController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
