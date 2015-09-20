@@ -22,9 +22,12 @@
                                 <rect key="frame" x="33" y="70" width="250" height="250"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vnw-wg-dz2">
-                                        <rect key="frame" x="0.0" y="103" width="250" height="44"/>
+                                        <rect key="frame" x="0.0" y="25" width="250" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="ma7-97-d5s"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="23"/>
-                                        <state key="normal" title="One"/>
+                                        <state key="normal" title="Car Info" backgroundImage="car"/>
                                         <state key="selected" title="One"/>
                                     </button>
                                 </subviews>
@@ -41,9 +44,10 @@
                                 <rect key="frame" x="317" y="70" width="250" height="250"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbs-my-hPu">
-                                        <rect key="frame" x="0.0" y="103" width="250" height="44"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="23"/>
-                                        <state key="normal" title="Two"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="Location" backgroundImage="nav2"/>
                                         <state key="selected" title="One"/>
                                     </button>
                                 </subviews>
@@ -53,6 +57,7 @@
                                     <constraint firstAttribute="centerY" secondItem="rbs-my-hPu" secondAttribute="centerY" id="Nvh-F6-wmC"/>
                                     <constraint firstAttribute="width" constant="250" id="kGx-Ui-JHl"/>
                                     <constraint firstAttribute="height" constant="250" id="qhF-ZL-FTv"/>
+                                    <constraint firstItem="rbs-my-hPu" firstAttribute="height" secondItem="81t-nS-PDh" secondAttribute="height" id="ufx-fh-uPd"/>
                                     <constraint firstItem="rbs-my-hPu" firstAttribute="width" secondItem="81t-nS-PDh" secondAttribute="width" id="zpG-ou-a8D"/>
                                 </constraints>
                             </view>
@@ -184,7 +189,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="car" width="580" height="457"/>
         <image name="first" width="30" height="30"/>
+        <image name="nav2" width="250" height="250"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>
