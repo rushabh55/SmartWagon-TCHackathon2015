@@ -9,5 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface OutlookMockDataController : NSObject
-
+-(void) createServiceReqWithHeaders;
+-(void) initSession;
+-(NSString*) getAuthID;
+-(NSDictionary*) mockCalendarAPI;
 @end
