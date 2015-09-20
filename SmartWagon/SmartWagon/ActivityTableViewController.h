@@ -1,5 +1,5 @@
 //
-//  CarInfo.h
+//  ActivityTableViewController.h
 //  SmartWagon
 //
 //  Created by Gosar, Rushabh on 9/20/15.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CarInfo : UIViewController
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@interface ActivityTableViewController : UITableViewController
 
 @end

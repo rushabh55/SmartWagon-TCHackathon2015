@@ -7,7 +7,7 @@
 //
 
 #import "CarInfo.h"
-
+#import "CarInfoTVCTableViewController.h"
 @interface CarInfo ()
 
 @end
@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // _tableView.delegate = [[CarInfoTVCTableViewController alloc]init];
     // Do any additional setup after loading the view.
 }
 
