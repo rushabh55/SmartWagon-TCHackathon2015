@@ -19,6 +19,14 @@
     NSDictionary* dict = [self loadData];
     NSDictionary* currObs = dict[@"current_observation"];
     NSString* sample = currObs[@"dewpoint_string"];
+    NSDictionary* display_location = currObs[@"display_location"];
+    NSString* city = display_location[@"city"];
+    NSString* elevation = display_location[@"elevation"];
+    NSString* relative_humidity = currObs[@"relative_humidity"];
+    NSString* pressure_in = currObs[@"pressure_in"];
+    NSString* precip_today_in = currObs[@"precip_today_in"];
+
+    _titleLabel.text = sample;
     //here sample will give 56 F (13...
 }
 
