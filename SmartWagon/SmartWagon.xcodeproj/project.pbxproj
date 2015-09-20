@@ -31,6 +31,8 @@
 		C28E47321BAE8AC900F510D6 /* MockVinliDataControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C28E47311BAE8AC900F510D6 /* MockVinliDataControl.m */; };
 		C28E47351BAE8C2400F510D6 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C28E47341BAE8C2400F510D6 /* MapViewController.m */; };
 		C2A9D1421BAEA4BA00F92969 /* CarInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A9D1411BAEA4BA00F92969 /* CarInfo.m */; };
+		C2A9D1451BAEA6EB00F92969 /* CarInfoTVCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A9D1441BAEA6EB00F92969 /* CarInfoTVCTableViewController.m */; };
+		C2A9D14E1BAEB89C00F92969 /* ActivityTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A9D14D1BAEB89C00F92969 /* ActivityTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,10 @@
 		C28E47341BAE8C2400F510D6 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		C2A9D1401BAEA4BA00F92969 /* CarInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarInfo.h; sourceTree = "<group>"; };
 		C2A9D1411BAEA4BA00F92969 /* CarInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarInfo.m; sourceTree = "<group>"; };
+		C2A9D1431BAEA6EB00F92969 /* CarInfoTVCTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarInfoTVCTableViewController.h; sourceTree = "<group>"; };
+		C2A9D1441BAEA6EB00F92969 /* CarInfoTVCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarInfoTVCTableViewController.m; sourceTree = "<group>"; };
+		C2A9D14C1BAEB89C00F92969 /* ActivityTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityTableViewController.h; sourceTree = "<group>"; };
+		C2A9D14D1BAEB89C00F92969 /* ActivityTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +135,8 @@
 				C28E47311BAE8AC900F510D6 /* MockVinliDataControl.m */,
 				C2A9D1401BAEA4BA00F92969 /* CarInfo.h */,
 				C2A9D1411BAEA4BA00F92969 /* CarInfo.m */,
+				C2A9D1431BAEA6EB00F92969 /* CarInfoTVCTableViewController.h */,
+				C2A9D1441BAEA6EB00F92969 /* CarInfoTVCTableViewController.m */,
 			);
 			name = Automobile;
 			sourceTree = "<group>";
@@ -136,6 +144,8 @@
 		67AE113C1BAE7AEA00B6F7B1 /* Activities */ = {
 			isa = PBXGroup;
 			children = (
+				C2A9D14C1BAEB89C00F92969 /* ActivityTableViewController.h */,
+				C2A9D14D1BAEB89C00F92969 /* ActivityTableViewController.m */,
 			);
 			name = Activities;
 			sourceTree = "<group>";
@@ -326,6 +336,8 @@
 			files = (
 				C2089EA21BAE75310014B41F /* SecondViewController.m in Sources */,
 				C2089E9C1BAE75310014B41F /* AppDelegate.m in Sources */,
+				C2A9D14E1BAEB89C00F92969 /* ActivityTableViewController.m in Sources */,
+				C2A9D1451BAEA6EB00F92969 /* CarInfoTVCTableViewController.m in Sources */,
 				C28E47321BAE8AC900F510D6 /* MockVinliDataControl.m in Sources */,
 				C2089E9F1BAE75310014B41F /* FirstViewController.m in Sources */,
 				67AE11581BAE82E500B6F7B1 /* EsriNavigator.m in Sources */,
