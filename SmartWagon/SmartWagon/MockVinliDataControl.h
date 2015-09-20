@@ -11,3 +11,4 @@
 @interface MockVinliDataControl : NSObject
 -(NSDictionary*)mockData;
 @end
+
