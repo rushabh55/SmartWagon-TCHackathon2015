@@ -32,7 +32,7 @@
                                         <state key="normal" title="Car Info" backgroundImage="car2"/>
                                         <state key="selected" title="One"/>
                                         <connections>
-                                            <segue destination="Tfx-jE-Dq6" kind="show" id="OcG-YO-0YU"/>
+                                            <segue destination="nSU-dl-DOk" kind="show" id="JaW-xU-ZtO"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -125,6 +125,9 @@
                                         <size key="titleShadowOffset" width="2" height="2"/>
                                         <state key="normal" title="Four" backgroundImage="activity"/>
                                         <state key="selected" title="One"/>
+                                        <connections>
+                                            <segue destination="T2Y-Sf-E0h" kind="show" id="vzr-oS-mtm"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -164,7 +167,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="928" y="74"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="kOK-iZ-fVJ">
@@ -288,55 +291,54 @@
             </objects>
             <point key="canvasLocation" x="2109" y="502"/>
         </scene>
-        <!--Car InfoTVC Table View Controller-->
-        <scene sceneID="KER-hZ-g6F">
+        <!--Root View Controller-->
+        <scene sceneID="x9d-we-jbx">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AsA-Pg-KbI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <view contentMode="scaleToFill" id="hs7-6C-Red">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0KJ-X6-nxb">
-                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                            <items>
-                                <navigationItem title="Title" id="Naz-L5-oqb"/>
-                            </items>
-                        </navigationBar>
-                        <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="bxX-5z-fwt">
-                            <rect key="frame" x="-69" y="-13" width="8" height="28"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <view key="tableHeaderView" contentMode="scaleToFill" id="Qz7-2K-oKe">
-                                <rect key="frame" x="0.0" y="0.0" width="8" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <prototypes>
-                                <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="5tX-fH-zlT">
+                <tableViewController id="nSU-dl-DOk" customClass="CarInfoTVCTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="RJh-B8-qGx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="YUf-ah-h9A">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YUf-ah-h9A" id="Lw2-75-djr">
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5tX-fH-zlT" id="Svm-pF-DJR">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </tableViewCellContentView>
-                                </tableViewCell>
-                            </prototypes>
-                            <connections>
-                                <outlet property="dataSource" destination="Tfx-jE-Dq6" id="l2U-Pk-30L"/>
-                                <outlet property="delegate" destination="Tfx-jE-Dq6" id="GHV-f4-Sek"/>
-                            </connections>
-                        </tableView>
-                    </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstItem="0KJ-X6-nxb" firstAttribute="height" secondItem="bxX-5z-fwt" secondAttribute="height" id="foK-4T-50w"/>
-                        <constraint firstAttribute="centerX" secondItem="0KJ-X6-nxb" secondAttribute="centerX" id="jsn-eG-7mz"/>
-                        <constraint firstItem="0KJ-X6-nxb" firstAttribute="width" secondItem="bxX-5z-fwt" secondAttribute="width" id="vjw-Nb-l1x"/>
-                    </constraints>
-                </view>
-                <tableViewController id="Tfx-jE-Dq6" customClass="CarInfoTVCTableViewController" sceneMemberID="viewController">
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="600" height="600"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="nSU-dl-DOk" id="F4V-6v-u08"/>
+                            <outlet property="delegate" destination="nSU-dl-DOk" id="ylh-NO-eQk"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="fnV-9W-pwI"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="b6c-PX-Nzr">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="done" id="8Ef-Nj-sJO"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nOK-Fp-FrY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1424" y="502"/>
+            <point key="canvasLocation" x="-1101" y="1242"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Xd0-LS-DxL">
+            <objects>
+                <navigationController id="AWp-T7-5vE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WBn-AX-rvA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nSU-dl-DOk" kind="relationship" relationship="rootViewController" id="PzY-Dq-kjD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fXN-cz-7do" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-71" y="1199"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
@@ -378,6 +380,38 @@
             </objects>
             <point key="canvasLocation" x="755" y="817"/>
         </scene>
+        <!--Weather Info-->
+        <scene sceneID="WVw-HQ-BcU">
+            <objects>
+                <viewController id="T2Y-Sf-E0h" customClass="WeatherInfo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mQb-SK-gb0"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mwg-DA-VIz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bep-89-zOk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ePj-el-3Xw">
+                                <rect key="frame" x="13" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="cVx-XR-HGW">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="GI1-Pa-boa"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ePj-el-3Xw" firstAttribute="top" secondItem="mQb-SK-gb0" secondAttribute="bottom" id="LWC-d3-SRh"/>
+                            <constraint firstAttribute="width" secondItem="ePj-el-3Xw" secondAttribute="width" id="tBr-C7-4yU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0z5-f5-qBP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1471" y="952"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
@@ -406,4 +440,7 @@
         <image name="loc" width="512" height="512"/>
         <image name="second" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="JaW-xU-ZtO"/>
+    </inferredMetricsTieBreakers>
 </document>

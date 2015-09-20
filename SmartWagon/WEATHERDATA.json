@@ -1,0 +1,95 @@
+
+{
+    "current_observation" =     {
+        UV = 0;
+        "dewpoint_c" = 13;
+        "dewpoint_f" = 56;
+        "dewpoint_string" = "56 F (13 C)";
+        "display_location" =         {
+            city = "San Francisco";
+            country = US;
+            "country_iso3166" = US;
+            elevation = "47.00000000";
+            full = "San Francisco, CA";
+            latitude = "37.77500916";
+            longitude = "-122.41825867";
+            magic = 1;
+            state = CA;
+            "state_name" = California;
+            wmo = 99999;
+            zip = 94101;
+        };
+        estimated =         {
+        };
+        "feelslike_c" = "17.8";
+        "feelslike_f" = "64.0";
+        "feelslike_string" = "64.0 F (17.8 C)";
+        "forecast_url" = "http://www.wunderground.com/US/CA/San_Francisco.html";
+        "heat_index_c" = NA;
+        "heat_index_f" = NA;
+        "heat_index_string" = NA;
+        "history_url" = "http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=KCASANFR58";
+        icon = clear;
+        "icon_url" = "http://icons.wxug.com/i/c/k/nt_clear.gif";
+        image =         {
+            link = "http://www.wunderground.com";
+            title = "Weather Underground";
+            url = "http://icons.wxug.com/graphics/wu2/logo_130x80.png";
+        };
+        "local_epoch" = 1442748355;
+        "local_time_rfc822" = "Sun, 20 Sep 2015 04:25:55 -0700";
+        "local_tz_long" = "America/Los_Angeles";
+        "local_tz_offset" = "-0700";
+        "local_tz_short" = PDT;
+        nowcast = "";
+        "ob_url" = "http://www.wunderground.com/cgi-bin/findweather/getForecast?query=37.773285,-122.417725";
+        "observation_epoch" = 1442748283;
+        "observation_location" =         {
+            city = "SOMA - Near Van Ness, San Francisco";
+            country = US;
+            "country_iso3166" = US;
+            elevation = "49 ft";
+            full = "SOMA - Near Van Ness, San Francisco, California";
+            latitude = "37.773285";
+            longitude = "-122.417725";
+            state = California;
+        };
+        "observation_time" = "Last Updated on September 20, 4:24 AM PDT";
+        "observation_time_rfc822" = "Sun, 20 Sep 2015 04:24:43 -0700";
+        "precip_1hr_in" = "0.00";
+        "precip_1hr_metric" = " 0";
+        "precip_1hr_string" = "0.00 in ( 0 mm)";
+        "precip_today_in" = "0.00";
+        "precip_today_metric" = 0;
+        "precip_today_string" = "0.00 in (0 mm)";
+        "pressure_in" = "29.83";
+        "pressure_mb" = 1010;
+        "pressure_trend" = 0;
+        "relative_humidity" = "74%";
+        solarradiation = "--";
+        "station_id" = KCASANFR58;
+        "temp_c" = "17.8";
+        "temp_f" = 64;
+        "temperature_string" = "64.0 F (17.8 C)";
+        "visibility_km" = "16.1";
+        "visibility_mi" = "10.0";
+        weather = Clear;
+        "wind_degrees" = 190;
+        "wind_dir" = South;
+        "wind_gust_kph" = 0;
+        "wind_gust_mph" = 0;
+        "wind_kph" = 0;
+        "wind_mph" = 0;
+        "wind_string" = Calm;
+        "windchill_c" = NA;
+        "windchill_f" = NA;
+        "windchill_string" = NA;
+    };
+    response =     {
+        features =         {
+            conditions = 1;
+        };
+        termsofService = "http://www.wunderground.com/weather/api/d/terms.html";
+        version = "0.1";
+    };
+}
