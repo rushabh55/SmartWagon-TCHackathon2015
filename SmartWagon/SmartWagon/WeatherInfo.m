@@ -27,6 +27,12 @@
     NSString* precip_today_in = currObs[@"precip_today_in"];
 
     _titleLabel.text = sample;
+    _precipitation.text = precip_today_in;
+    _Elevation.text = elevation;
+    _Humidity.text = relative_humidity;
+    _Place.text = city;
+    _Pressure.text = pressure_in;
+    
     //here sample will give 56 F (13...
 }
 
