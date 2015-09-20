@@ -154,6 +154,7 @@
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <navigationItem key="navigationItem" id="F9V-rG-jA6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -172,14 +173,18 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dhE-b9-3LN" customClass="AGSMapView">
-                                <rect key="frame" x="0.0" y="68" width="600" height="488"/>
+                                <rect key="frame" x="0.0" y="62" width="600" height="494"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bec-qs-Hid">
-                                <rect key="frame" x="35" y="16" width="600" height="44"/>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bec-qs-Hid">
+                                <rect key="frame" x="0.0" y="14" width="600" height="44"/>
                                 <items>
-                                    <navigationItem title="Title" id="mkv-YO-LXa">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="4kw-rx-T0h"/>
+                                    <navigationItem title="esri Map View" id="mkv-YO-LXa">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="4kw-rx-T0h">
+                                            <connections>
+                                                <segue destination="9pv-A4-QxB" kind="presentation" id="75p-4X-hRA"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -187,11 +192,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="bec-qs-Hid" firstAttribute="width" secondItem="gFk-p3-VXn" secondAttribute="width" id="6up-cU-IhS"/>
-                            <constraint firstItem="dhE-b9-3LN" firstAttribute="top" secondItem="gFk-p3-VXn" secondAttribute="topMargin" constant="68" id="9or-q9-f6w"/>
+                            <constraint firstItem="dhE-b9-3LN" firstAttribute="top" secondItem="gFk-p3-VXn" secondAttribute="topMargin" constant="62" id="9or-q9-f6w"/>
                             <constraint firstAttribute="height" secondItem="dhE-b9-3LN" secondAttribute="height" id="Agh-8w-FBL"/>
                             <constraint firstItem="YwJ-bk-DBS" firstAttribute="top" secondItem="dhE-b9-3LN" secondAttribute="bottom" id="Iyb-a3-SMt"/>
                             <constraint firstAttribute="centerY" secondItem="dhE-b9-3LN" secondAttribute="centerY" id="Zzf-LY-vhf"/>
-                            <constraint firstItem="bec-qs-Hid" firstAttribute="top" secondItem="gFk-p3-VXn" secondAttribute="topMargin" constant="16" id="dNl-0s-mLF"/>
+                            <constraint firstItem="bec-qs-Hid" firstAttribute="top" secondItem="gFk-p3-VXn" secondAttribute="topMargin" constant="14" id="dNl-0s-mLF"/>
                             <constraint firstAttribute="centerX" secondItem="dhE-b9-3LN" secondAttribute="centerX" id="rNJ-YX-Xlz"/>
                             <constraint firstAttribute="width" secondItem="dhE-b9-3LN" secondAttribute="width" id="zTf-cT-n1k"/>
                         </constraints>
@@ -213,6 +218,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="umU-Kb-ZhZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1533" y="-320"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="Txc-kZ-vrl">
+            <objects>
+                <viewController id="soM-nn-reB" customClass="MapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qjo-GN-tDX"/>
+                        <viewControllerLayoutGuide type="bottom" id="wes-dY-bbt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M9y-um-M7B">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Apc-hc-iWb">
+                                <rect key="frame" x="0.0" y="14" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Car Dashboard" id="zS5-os-Dbm">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="1vM-fr-9ad"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Apc-hc-iWb" firstAttribute="width" secondItem="M9y-um-M7B" secondAttribute="width" id="2Bm-9T-cxs"/>
+                            <constraint firstItem="Apc-hc-iWb" firstAttribute="top" secondItem="M9y-um-M7B" secondAttribute="topMargin" constant="14" id="RZa-U0-i8R"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="b7q-IF-9vN"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UWi-se-rMh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1533" y="360"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
@@ -282,4 +323,7 @@
         <image name="loc" width="512" height="512"/>
         <image name="second" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="75p-4X-hRA"/>
+    </inferredMetricsTieBreakers>
 </document>
