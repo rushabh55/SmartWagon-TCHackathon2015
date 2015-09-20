@@ -63,6 +63,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67AE113A1BAE7AB700B6F7B1 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		67AE113B1BAE7AD900B6F7B1 /* Automobile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Automobile;
+			sourceTree = "<group>";
+		};
+		67AE113C1BAE7AEA00B6F7B1 /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Activities;
+			sourceTree = "<group>";
+		};
+		67AE113D1BAE7AFA00B6F7B1 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Alerts;
+			sourceTree = "<group>";
+		};
 		C2089E8A1BAE75310014B41F = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +112,10 @@
 		C2089E951BAE75310014B41F /* SmartWagon */ = {
 			isa = PBXGroup;
 			children = (
+				67AE113D1BAE7AFA00B6F7B1 /* Alerts */,
+				67AE113C1BAE7AEA00B6F7B1 /* Activities */,
+				67AE113B1BAE7AD900B6F7B1 /* Automobile */,
+				67AE113A1BAE7AB700B6F7B1 /* Navigation */,
 				C2089E9A1BAE75310014B41F /* AppDelegate.h */,
 				C2089E9B1BAE75310014B41F /* AppDelegate.m */,
 				C2089E9D1BAE75310014B41F /* FirstViewController.h */,
@@ -426,6 +458,7 @@
 				C2089EBB1BAE75310014B41F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C2089EBC1BAE75310014B41F /* Build configuration list for PBXNativeTarget "SmartWagonTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +467,7 @@
 				C2089EBE1BAE75310014B41F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
