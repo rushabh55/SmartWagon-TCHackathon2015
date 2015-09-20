@@ -182,7 +182,7 @@
                                     <navigationItem title="esri Map View" id="mkv-YO-LXa">
                                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="4kw-rx-T0h">
                                             <connections>
-                                                <segue destination="9pv-A4-QxB" kind="presentation" id="75p-4X-hRA"/>
+                                                <action selector="backPressed:" destination="0uw-Ow-B50" id="O65-Hf-OhG"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -219,10 +219,10 @@
             </objects>
             <point key="canvasLocation" x="1533" y="-320"/>
         </scene>
-        <!--Map View Controller-->
+        <!--Car Info-->
         <scene sceneID="Txc-kZ-vrl">
             <objects>
-                <viewController id="soM-nn-reB" customClass="MapViewController" sceneMemberID="viewController">
+                <viewController id="soM-nn-reB" customClass="CarInfo" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qjo-GN-tDX"/>
                         <viewControllerLayoutGuide type="bottom" id="wes-dY-bbt"/>
@@ -323,7 +323,4 @@
         <image name="loc" width="512" height="512"/>
         <image name="second" width="30" height="30"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="75p-4X-hRA"/>
-    </inferredMetricsTieBreakers>
 </document>
