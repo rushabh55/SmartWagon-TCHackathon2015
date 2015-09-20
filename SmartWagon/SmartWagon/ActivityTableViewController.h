@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ActivityTableViewController : UITableViewController
+- (IBAction)backPressed:(id)sender;
 @property (atomic, strong) NSArray* dataSource;
+@property (atomic, strong) NSMutableArray* timeSource;
 @end
