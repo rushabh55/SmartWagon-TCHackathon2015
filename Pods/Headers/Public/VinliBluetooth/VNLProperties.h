@@ -1,1 +1,0 @@
-../../../VinliBluetooth/VinliBluetooth/VNLProperties.h

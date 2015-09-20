@@ -1,1 +1,0 @@
-../../../VinliBluetooth/VinliBluetooth/VNLDeviceManager.h
