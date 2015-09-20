@@ -8,9 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <VinliNet/VinliSDK.h>
+#import "Constants.h"
 
 @interface NetworkingProtocol : NSObject
 +(id) instance;
 -(void) sendGETRequest:(NSString*)requestURL delegate:(void (^)(id, NSError*))completionHandler;
 -(void) sendPOSTRequest:(NSString*)requestURL withParams:(NSDictionary*)params delegate:(void (^)(id, NSError*))completionHandler;
+
 @end

@@ -47,6 +47,7 @@ NetworkingProtocol* m_instance;
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         completionHandler(nil, error);
     }];
+    NSLog(@"%@", kAppIdVinli);
 }
 
 
