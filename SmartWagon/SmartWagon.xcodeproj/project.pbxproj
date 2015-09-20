@@ -36,6 +36,7 @@
 		C2A9D14E1BAEB89C00F92969 /* ActivityTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A9D14D1BAEB89C00F92969 /* ActivityTableViewController.m */; };
 		C2A9D1521BAECD7300F92969 /* WeatherInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A9D1511BAECD7300F92969 /* WeatherInfo.m */; };
 		C2A9D1541BAED01400F92969 /* WEATHERDATA.json in Resources */ = {isa = PBXBuildFile; fileRef = C2A9D1531BAED01400F92969 /* WEATHERDATA.json */; };
+		C2A9D1571BAF0AD400F92969 /* OutlookMockDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A9D1561BAF0AD400F92969 /* OutlookMockDataController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,8 @@
 		C2A9D1501BAECD7300F92969 /* WeatherInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherInfo.h; sourceTree = "<group>"; };
 		C2A9D1511BAECD7300F92969 /* WeatherInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherInfo.m; sourceTree = "<group>"; };
 		C2A9D1531BAED01400F92969 /* WEATHERDATA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WEATHERDATA.json; sourceTree = "<group>"; };
+		C2A9D1551BAF0AD400F92969 /* OutlookMockDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutlookMockDataController.h; sourceTree = "<group>"; };
+		C2A9D1561BAF0AD400F92969 /* OutlookMockDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutlookMockDataController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +227,8 @@
 				C2089EA61BAE75310014B41F /* Images.xcassets */,
 				C2089EA81BAE75310014B41F /* LaunchScreen.xib */,
 				C2089E961BAE75310014B41F /* Supporting Files */,
+				C2A9D1551BAF0AD400F92969 /* OutlookMockDataController.h */,
+				C2A9D1561BAF0AD400F92969 /* OutlookMockDataController.m */,
 			);
 			path = SmartWagon;
 			sourceTree = "<group>";
@@ -376,6 +381,7 @@
 				C2089E991BAE75310014B41F /* main.m in Sources */,
 				C2A9D1421BAEA4BA00F92969 /* CarInfo.m in Sources */,
 				C28E47351BAE8C2400F510D6 /* MapViewController.m in Sources */,
+				C2A9D1571BAF0AD400F92969 /* OutlookMockDataController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
