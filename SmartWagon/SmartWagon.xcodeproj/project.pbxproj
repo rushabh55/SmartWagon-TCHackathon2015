@@ -170,6 +170,13 @@
 			name = Alerts;
 			sourceTree = "<group>";
 		};
+		96EBE6091BAF0A4C002EB9AA /* Outlook */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Outlook;
+			sourceTree = "<group>";
+		};
 		C2089E8A1BAE75310014B41F = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +211,7 @@
 		C2089E951BAE75310014B41F /* SmartWagon */ = {
 			isa = PBXGroup;
 			children = (
+				96EBE6091BAF0A4C002EB9AA /* Outlook */,
 				C2A9D14F1BAECC6900F92969 /* WeatherInfo */,
 				67AE113D1BAE7AFA00B6F7B1 /* Alerts */,
 				67AE113C1BAE7AEA00B6F7B1 /* Activities */,
