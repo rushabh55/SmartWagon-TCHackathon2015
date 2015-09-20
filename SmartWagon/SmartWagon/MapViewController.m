@@ -29,6 +29,38 @@
     locationManager = [[CLLocationManager alloc] init];
     locationManager.delegate = self;
     locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    
+    [self maps];
+}
+
+-(void) maps {
+    NSDictionary* dict = [self loadData];
+    NSDictionary* currObs = dict[@"geoLocation"];
+    float lat = [currObs[@"lat"] floatValue];
+    float lng = [currObs[@"lng"] floatValue];
+    [self setlocation:lat withLong:lng];
+}
+
+
+-(NSDictionary*)loadData {
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+    [request setHTTPMethod:@"GET"];
+    [request setURL:[NSURL URLWithString:@"http://devapi.mygasfeed.com/stations/radius/37.759851/-122.383611/5/reg/distance/rfej9napna.json?callback="]];
+    
+    NSError *error = [[NSError alloc] init];
+    NSHTTPURLResponse *responseCode = nil;
+    
+    NSData *oResponseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&responseCode error:&error];
+    
+    if([responseCode statusCode] != 200){
+        return nil;
+    }
+    NSDictionary *jsonObject=[NSJSONSerialization
+                              JSONObjectWithData:oResponseData
+                              options:NSJSONReadingMutableLeaves
+                              error:nil];
+    return jsonObject;
+    
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
@@ -54,15 +86,20 @@
 //    }
 }
 
-- (void)setlocation(float lat, float lng) {
+- (void)setlocation:(float)lat withLong:(float)lng {
     //Set the parameters
-    let params = AGSLocatorFindParameters()
-    id params = [[AGSLocatorFindParameters alloc] init]
-    params.text = searchBar.text
-    params.outFields = ["*"]
-    params.outSpatialReference = self.mapView.spatialReference
-    params.location = AGSPoint(x: lat, y: lng, spatialReference: nil)
-    self.locator.findWithParameters(params)
+    AGSLocatorFindParameters *findParams = [[AGSLocatorFindParameters alloc] init];
+    findParams.text = @"Gas Station";
+    findParams.outFields = @[@"*"];
+    findParams.outSpatialReference = self.mapView.spatialReference;
+    AGSPoint* p = [AGSPoint pointWithX:lat y:lng spatialReference:nil];
+    findParams.location = p;
+    
+    self.locator = [AGSLocator locator];
+    self.locator.delegate = self;
+    
+    [self.locator findWithParameters:findParams];
+   
 };
 
 
