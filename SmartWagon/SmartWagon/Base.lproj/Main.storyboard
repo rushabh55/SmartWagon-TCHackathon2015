@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--First-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -16,27 +18,104 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="221" y="279" width="157.5" height="41.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="203" y="329" width="194.5" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQg-kg-DqO" userLabel="One">
+                                <rect key="frame" x="33" y="70" width="250" height="250"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vnw-wg-dz2">
+                                        <rect key="frame" x="0.0" y="103" width="250" height="44"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="23"/>
+                                        <state key="normal" title="One"/>
+                                        <state key="selected" title="One"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="HSA-SI-nSA"/>
+                                    <constraint firstAttribute="centerY" secondItem="Vnw-wg-dz2" secondAttribute="centerY" id="bSe-X9-WWb"/>
+                                    <constraint firstAttribute="centerX" secondItem="Vnw-wg-dz2" secondAttribute="centerX" id="cnL-K4-Khu"/>
+                                    <constraint firstItem="Vnw-wg-dz2" firstAttribute="width" secondItem="gQg-kg-DqO" secondAttribute="width" id="h6y-CS-MNW"/>
+                                    <constraint firstAttribute="height" constant="250" id="td0-s4-Mdv"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="81t-nS-PDh" userLabel="Two">
+                                <rect key="frame" x="317" y="70" width="250" height="250"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbs-my-hPu">
+                                        <rect key="frame" x="0.0" y="103" width="250" height="44"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="23"/>
+                                        <state key="normal" title="Two"/>
+                                        <state key="selected" title="One"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="rbs-my-hPu" secondAttribute="centerX" id="0Wh-HC-ugN"/>
+                                    <constraint firstAttribute="centerY" secondItem="rbs-my-hPu" secondAttribute="centerY" id="Nvh-F6-wmC"/>
+                                    <constraint firstAttribute="width" constant="250" id="kGx-Ui-JHl"/>
+                                    <constraint firstAttribute="height" constant="250" id="qhF-ZL-FTv"/>
+                                    <constraint firstItem="rbs-my-hPu" firstAttribute="width" secondItem="81t-nS-PDh" secondAttribute="width" id="zpG-ou-a8D"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4TU-Yr-OmW" userLabel="Three">
+                                <rect key="frame" x="33" y="340" width="250" height="250"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngH-7s-upR">
+                                        <rect key="frame" x="0.0" y="103" width="250" height="44"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="23"/>
+                                        <state key="normal" title="Three"/>
+                                        <state key="selected" title="One"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="ngH-7s-upR" secondAttribute="centerY" id="ADM-mN-fxB"/>
+                                    <constraint firstAttribute="height" constant="250" id="HOv-7d-LjX"/>
+                                    <constraint firstItem="ngH-7s-upR" firstAttribute="width" secondItem="4TU-Yr-OmW" secondAttribute="width" id="aPn-in-rD9"/>
+                                    <constraint firstAttribute="centerX" secondItem="ngH-7s-upR" secondAttribute="centerX" id="cOM-Ia-rra"/>
+                                    <constraint firstAttribute="width" constant="250" id="d6W-jo-c9b"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="alE-RU-Z7h" userLabel="Three">
+                                <rect key="frame" x="317" y="340" width="250" height="250"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUf-Ys-6u0">
+                                        <rect key="frame" x="0.0" y="103" width="250" height="44"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="23"/>
+                                        <state key="normal" title="Four"/>
+                                        <state key="selected" title="One"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="1JI-Cm-flj"/>
+                                    <constraint firstItem="iUf-Ys-6u0" firstAttribute="width" secondItem="alE-RU-Z7h" secondAttribute="width" id="1x9-qa-IQI"/>
+                                    <constraint firstAttribute="centerY" secondItem="iUf-Ys-6u0" secondAttribute="centerY" id="5JW-TF-mi5"/>
+                                    <constraint firstAttribute="height" constant="250" id="cd3-Jd-dBG"/>
+                                    <constraint firstAttribute="centerX" secondItem="iUf-Ys-6u0" secondAttribute="centerX" id="eFL-tt-HyU"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="81t-nS-PDh" secondAttribute="trailing" constant="17" id="0zT-m5-E9A"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="alE-RU-Z7h" secondAttribute="trailing" constant="17" id="8PK-xX-qZf"/>
+                            <constraint firstItem="81t-nS-PDh" firstAttribute="top" secondItem="alE-RU-Z7h" secondAttribute="bottom" constant="20" id="DpA-vi-STM"/>
+                            <constraint firstItem="81t-nS-PDh" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="topMargin" constant="50" id="Fqp-mR-plK"/>
+                            <constraint firstItem="gQg-kg-DqO" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="50" id="Kem-dN-yAV"/>
+                            <constraint firstItem="gQg-kg-DqO" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="17" id="MUT-v1-dHB"/>
+                            <constraint firstItem="81t-nS-PDh" firstAttribute="top" secondItem="alE-RU-Z7h" secondAttribute="top" constant="270" id="ZN4-RE-A8i"/>
+                            <constraint firstItem="4TU-Yr-OmW" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="17" id="ZjW-VC-0Ks"/>
+                            <constraint firstItem="81t-nS-PDh" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="50" id="hbL-bz-E5z"/>
+                            <constraint firstItem="4TU-Yr-OmW" firstAttribute="top" secondItem="81t-nS-PDh" secondAttribute="bottom" constant="20" id="lCU-VZ-wxK"/>
+                            <constraint firstItem="81t-nS-PDh" firstAttribute="bottom" secondItem="alE-RU-Z7h" secondAttribute="bottom" constant="-270" id="zzJ-My-xlz"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="DpA-vi-STM"/>
+                                <exclude reference="Fqp-mR-plK"/>
+                                <exclude reference="ZN4-RE-A8i"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                 </viewController>
@@ -47,7 +126,7 @@
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -60,13 +139,13 @@
                                 <rect key="frame" x="195" y="279" width="209.5" height="41.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
                                 <rect key="frame" x="192" y="329" width="215.5" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
