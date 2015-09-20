@@ -21,13 +21,15 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQg-kg-DqO" userLabel="One">
                                 <rect key="frame" x="33" y="70" width="250" height="250"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vnw-wg-dz2">
-                                        <rect key="frame" x="0.0" y="25" width="250" height="200"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vnw-wg-dz2">
+                                        <rect key="frame" x="25" y="25" width="200" height="200"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="ma7-97-d5s"/>
+                                            <constraint firstAttribute="width" constant="200" id="uLP-ky-v7B"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="23"/>
-                                        <state key="normal" title="Car Info" backgroundImage="car"/>
+                                        <size key="titleShadowOffset" width="2" height="2"/>
+                                        <state key="normal" title="Car Info" backgroundImage="car2"/>
                                         <state key="selected" title="One"/>
                                     </button>
                                 </subviews>
@@ -36,9 +38,14 @@
                                     <constraint firstAttribute="width" constant="250" id="HSA-SI-nSA"/>
                                     <constraint firstAttribute="centerY" secondItem="Vnw-wg-dz2" secondAttribute="centerY" id="bSe-X9-WWb"/>
                                     <constraint firstAttribute="centerX" secondItem="Vnw-wg-dz2" secondAttribute="centerX" id="cnL-K4-Khu"/>
-                                    <constraint firstItem="Vnw-wg-dz2" firstAttribute="width" secondItem="gQg-kg-DqO" secondAttribute="width" id="h6y-CS-MNW"/>
+                                    <constraint firstItem="Vnw-wg-dz2" firstAttribute="width" secondItem="gQg-kg-DqO" secondAttribute="width" constant="1" id="h6y-CS-MNW"/>
                                     <constraint firstAttribute="height" constant="250" id="td0-s4-Mdv"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="h6y-CS-MNW"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="81t-nS-PDh" userLabel="Two">
                                 <rect key="frame" x="317" y="70" width="250" height="250"/>
@@ -46,9 +53,12 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbs-my-hPu">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                        <size key="titleShadowOffset" width="1" height="1"/>
-                                        <state key="normal" title="Location" backgroundImage="nav2"/>
+                                        <size key="titleShadowOffset" width="2" height="2"/>
+                                        <state key="normal" title="Location" backgroundImage="loc"/>
                                         <state key="selected" title="One"/>
+                                        <connections>
+                                            <segue destination="0uw-Ow-B50" kind="show" id="zmu-5l-q6i"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -65,10 +75,20 @@
                                 <rect key="frame" x="33" y="340" width="250" height="250"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngH-7s-upR">
-                                        <rect key="frame" x="0.0" y="103" width="250" height="44"/>
+                                        <rect key="frame" x="25" y="25" width="200" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="7zi-eF-izC"/>
+                                            <constraint firstAttribute="width" constant="200" id="edP-6U-SMb"/>
+                                            <constraint firstAttribute="height" constant="200" id="tVk-F0-SZG"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="23"/>
-                                        <state key="normal" title="Three"/>
+                                        <state key="normal" title="Three" backgroundImage="add2"/>
                                         <state key="selected" title="One"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="tVk-F0-SZG"/>
+                                            </mask>
+                                        </variation>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -76,17 +96,28 @@
                                     <constraint firstAttribute="centerY" secondItem="ngH-7s-upR" secondAttribute="centerY" id="ADM-mN-fxB"/>
                                     <constraint firstAttribute="height" constant="250" id="HOv-7d-LjX"/>
                                     <constraint firstItem="ngH-7s-upR" firstAttribute="width" secondItem="4TU-Yr-OmW" secondAttribute="width" id="aPn-in-rD9"/>
+                                    <constraint firstItem="ngH-7s-upR" firstAttribute="height" secondItem="4TU-Yr-OmW" secondAttribute="height" constant="1" id="bts-0N-z21"/>
                                     <constraint firstAttribute="centerX" secondItem="ngH-7s-upR" secondAttribute="centerX" id="cOM-Ia-rra"/>
                                     <constraint firstAttribute="width" constant="250" id="d6W-jo-c9b"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="aPn-in-rD9"/>
+                                        <exclude reference="bts-0N-z21"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="alE-RU-Z7h" userLabel="Three">
                                 <rect key="frame" x="317" y="340" width="250" height="250"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUf-Ys-6u0">
-                                        <rect key="frame" x="0.0" y="103" width="250" height="44"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="g5J-VQ-UJF"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="23"/>
-                                        <state key="normal" title="Four"/>
+                                        <size key="titleShadowOffset" width="2" height="2"/>
+                                        <state key="normal" title="Four" backgroundImage="activity"/>
                                         <state key="selected" title="One"/>
                                     </button>
                                 </subviews>
@@ -127,6 +158,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kOK-iZ-fVJ">
+            <objects>
+                <viewController id="0uw-Ow-B50" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2nh-Mb-CXT"/>
+                        <viewControllerLayoutGuide type="bottom" id="YwJ-bk-DBS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dyU-Fk-mhf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="umU-Kb-ZhZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1371" y="-321"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
@@ -189,9 +238,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="car" width="580" height="457"/>
+        <image name="activity" width="250" height="250"/>
+        <image name="add2" width="256" height="256"/>
+        <image name="car2" width="256" height="256"/>
         <image name="first" width="30" height="30"/>
-        <image name="nav2" width="250" height="250"/>
+        <image name="loc" width="512" height="512"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>
